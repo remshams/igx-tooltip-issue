@@ -1,1 +1,18 @@
-<h1>Chart</h1>
+<igx-data-chart class="chart">
+  <igx-numeric-x-axis #xAxis [title]="'X'"></igx-numeric-x-axis>
+  <igx-numeric-y-axis #yAxis [title]="'Y'"></igx-numeric-y-axis>
+  <igx-scatter-line-series
+    [xAxis]="xAxis"
+    [yAxis]="yAxis"
+    [dataSource]="chartData"
+    xMemberPath="x"
+    yMemberPath="y"
+    showDefaultTooltip="true"
+    transitionDuration="500"
+  >
+  </igx-scatter-line-series>
+  <ng-template #tooltip>
+    jhfkdshjskjdhfsdfkjhgfskdjghkjfdsghksjdfhgsdfkjghksdfghsdf
+  </ng-template>
+</igx-data-chart>
+<div class="other-content">Other Content</div>

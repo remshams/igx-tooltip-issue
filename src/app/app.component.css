@@ -1,0 +1,13 @@
+:host {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.chart {
+  height: 100%;
+}
+
+.other-content {
+  background-color: orange;
+}
