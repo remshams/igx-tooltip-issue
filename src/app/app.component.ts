@@ -1,11 +1,12 @@
-import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { ChangeDetectionStrategy, Component } from '@angular/core';
 import {
   IgxCategoryChartModule,
   IgxDataChartCoreModule,
   IgxDataChartInteractivityModule,
   IgxDataChartScatterCoreModule,
   IgxDataChartScatterModule,
+  IgxItemToolTipLayerModule,
 } from 'igniteui-angular-charts';
 
 @Component({
@@ -19,6 +20,7 @@ import {
     IgxDataChartScatterCoreModule,
     IgxDataChartScatterModule,
     IgxDataChartInteractivityModule,
+    IgxItemToolTipLayerModule,
   ],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],

@@ -7,10 +7,12 @@
     [dataSource]="chartData"
     xMemberPath="x"
     yMemberPath="y"
-    showDefaultTooltip="true"
     transitionDuration="500"
+    [showDefaultTooltip]="false"
+    [tooltipTemplate]="tooltip"
   >
   </igx-scatter-line-series>
+  <igx-item-tool-tip-layer></igx-item-tool-tip-layer>
 </igx-data-chart>
 <div class="other-content">Other Content</div>
 <igx-category-chart
@@ -19,3 +21,7 @@
   chartType="Spline"
 ></igx-category-chart>
 <div class="other-content">Other Content</div>
+<ng-template #tooltip>
+  <h1>Test</h1>
+  <div>This is a template</div>
+</ng-template>
